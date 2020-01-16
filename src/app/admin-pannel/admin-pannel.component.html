@@ -1,0 +1,90 @@
+
+<form class="form-horizontal" (ngSubmit)="onSubmit()" [formGroup]="employeeForm">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title">Admin Pannel Form</h3>
+      </div>
+      <div class="panel-body">
+        <div class="form-group" >
+          <label class="col-sm-2 control-label" for="adminrole">Admin Role</label>
+          <div class="col-sm-8">
+            <select id="inputState" class="form-control" formControlName="adminrole">
+              <option selected>Choose...</option>
+              <option>Create</option>
+              <option>GetSingleUserData</option>
+              <option>Update</option>
+              <option>UpdateSave</option>
+              <option>Delete</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-sm-2 control-label" for="userid">User ID</label>
+          <div class="col-sm-8">
+            <input id="userID" type="number" class="form-control" formControlName="userID">
+          </div>
+        </div>
+          
+        <div class="form-group">
+          <label class="col-sm-2 control-label" for="userName">user Name</label>
+          <div class="col-sm-8">
+            <input id="userName" type="text" class="form-control" formControlName="userName">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-sm-2 control-label" for="pwd">Password</label>
+          <div class="col-sm-8">
+            <input id="pwd" type="password" class="form-control" formControlName="pwd">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-sm-2 control-label" for="role">Role</label>
+          <div class="col-sm-8">
+            <input id="role" type="text" class="form-control" formControlName="role">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-sm-2 control-label" for="address">Address</label>
+          <div class="col-sm-8">
+            <input id="address" type="text" class="form-control" formControlName="address">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-sm-2 control-label" for="phone">Phone</label>
+          <div class="col-sm-8">
+            <input id="phone" type="number" class="form-control" formControlName="phone">
+          </div>
+        </div>
+  
+      </div>
+      <div  class="btn-toolbar text-center well" class="panel-footer">
+        <div class="btn-toolbar">
+          <div>
+            <button class="btn btn-primary" style="margin-right: 8px;" type="submit">Add</button>
+          </div>
+         <div>
+          <button class="btn btn-primary"  style="margin-right: 8px;" type="submit">Remove</button>
+         </div>
+         <div>
+          <button class="btn btn-primary"  style="margin-right: 8px;" type="submit">Getsingleuser</button>
+         </div>
+         <div>
+          <button class="btn btn-primary"  style="margin-right: 8px;" type="submit">UserGetUpDate</button>
+         </div>
+         <div>
+          <button class="btn btn-primary"  style="margin-right: 8px;" type="submit">updateSetUserData</button>
+         </div>
+       </div>
+      </div>
+    </div>
+</form>
+<div>
+  <button class="btn btn-primary" style="margin-right: 8px;" type="submit" (click)="onfetchDataClick()" >Edit</button>
+</div>
+
+
