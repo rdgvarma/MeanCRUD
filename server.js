@@ -192,6 +192,8 @@ app.use(express.static(__dirname+'/dist/pjt1'));
 
 //*** delete data using userId  ends here  */
 
+//***for testing of pull command i have created this. ** //
+
 
 app.listen(PORT,function(){
     console.log('server running on port '+ PORT);
